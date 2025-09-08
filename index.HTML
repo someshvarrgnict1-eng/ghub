@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Identity Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .id-card {
+      width: 350px;
+      height: 220px;
+      background: orange;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .header h2 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+    .photo {
+      float: right;
+      width: 80px;
+      height: 100px;
+      border: 1px solid #ccc;
+      background: #eee;
+      margin-left: 10px;
+    }
+    .info {
+      font-size: 14px;
+      line-height: 0.8;
+      color: #444;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="id-card">
+    <div class="header">
+      <h2>IDENTITY CARD</h2>
+    </div>
+    <div class="clearfix">
+      <div class="photo">
+        <img src="ramji.jfif" width="80" height="100">
+      </div>
+      <div class="info">
+        <p><span class="label">Name:</span> RAM PANDEY</p>
+        <p><span class="label">ID No:</span> 000117567</p>
+        <p><span class="label">DOB:</span> 07/05/2005</p>
+        <p><span class="label">Gender:</span> Male</p>
+        <p><span class="label">Blood Group:</span> O+</p>
+      </div>
+    </div>
+    <div style="margin-top: 10px; font-size: 12px; text-align: center;">
+      Issued by: RJNICT JHALWA
+    </div>
+  </div>
+</body>
+</html>
